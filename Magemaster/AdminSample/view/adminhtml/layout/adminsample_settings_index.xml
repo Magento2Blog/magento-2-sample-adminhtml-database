@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<head>
+		<title>First Admin Sample Site</title>
+	</head>
+	<body>
+		<referenceContainer name="content">
+			<block class="Magemaster\AdminSample\Block\Adminhtml\Settings\Index" name="settings.index" template="Magemaster_AdminSample::settings/index.phtml"/>
+		</referenceContainer>
+	</body>
+</page>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Magemaster_AdminSample::customMenu"
+             title="AdminSample"
+             module="Magemaster_AdminSample"
+             sortOrder="9999"
+             parent="Magento_Backend::system"
+             resource="Magento_Backend::content" />
+ 
+        <add id="Magemaster_AdminSample::settings"
+             title="Settings"
+             module="Magemaster_AdminSample"
+             sortOrder="0"
+             action="adminsample/settings"
+             parent="Magemaster_AdminSample::customMenu"
+             resource="Magento_Backend::content" />
+
+	<add id="Magemaster_AdminSample::settings_set"
+             title="Write to DB"
+             module="Magemaster_AdminSample"
+             sortOrder="0"
+             action="adminsample/settings/set"
+             parent="Magemaster_AdminSample::customMenu"
+             resource="Magento_Backend::content" />
+    </menu>
+</config>
